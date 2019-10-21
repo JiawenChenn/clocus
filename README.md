@@ -1,5 +1,5 @@
 # CLOCUS
-clocus is a R package to generat more fancy locuszoom figure. File requirement and example are shown in this manuscript. This package is built by Jiawen Chen of [Lu's laboratory](http://qlu-lab.org/index.html).  
+clocus is a R package to generat more fancy locuszoom figure. File requirement and example are shown in this [manuscript](https://github.com/JiawenChenn/clocus/blob/master/file/clocus.pdf). This package is built by Jiawen Chen of [Lu's laboratory](http://qlu-lab.org/index.html).  
 
 
 ## Install clocus
