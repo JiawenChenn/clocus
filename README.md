@@ -20,5 +20,9 @@ To use this package, you have to install following packages.
 * ggrepel
 * latex2exp
 
+## Example
+Example using clocus to plot clocus figue about gene CELF1 region on chromosome 11 is under ``file/example``.
+
+
 ## Contact
 For questions/comments regarding to the R package, please contact Jiawen Chen (jchen778 at wisc dot edu).
