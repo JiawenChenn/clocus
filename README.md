@@ -1,7 +1,24 @@
-# clocus
-In order to make GWAS plot points more distinguishable, separating the colors by r2 using 10 levels is a good choice. Here is an example about gene CELF1 region on chromosome 11. clous upper to make the upper part and clous lower to make the lower part.
+# CLOCUS
+clocus is a R package to generat more fancy locuszoom figure. File requirement and example are shown in this manuscript. This package is built by Jiawen Chen of [Lu's laboratory](http://qlu-lab.org/index.html).  
 
 
+## Install clocus
+### Download from github
+install_github("JiawenChenn/clocus/clocus")
 
+## Repository structure
+* ``clocus``: the directory contains code for the R package
+* ``file``: the directory contains manuscript and examples.
 
-![](https://github.com/JiawenChenn/clocus/blob/master/figure/example.png)
+## Dependency 
+To use this package, you have to install following packages.
+* gggenes 
+* ggplot2
+* ggfittext
+* gplots
+* data.table
+* ggrepel
+* latex2exp
+
+## Contact
+For questions/comments regarding to the R package, please contact Jiawen Chen (jchen778 at wisc dot edu).
