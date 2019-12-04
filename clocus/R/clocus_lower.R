@@ -35,7 +35,7 @@ clocus_lower<-function(gene_GWAS,gene_chr,gene_everyline=6,x_title,grid.show=ele
     library(data.table)
     library(ggrepel)
     library(latex2exp)
-  gene_list<-gene_chr[gene_chr$start>=min(gene_GWAS$pos) & gene_chr$end <=max(gene_GWAS$pos)]
+  gene_list<-gene_chr[gene_chr$start>=min(gene_GWAS$pos) & gene_chr$end <=max(gene_GWAS$pos),]
   if(length(omit_gene)>0){
     gene_list<-gene_list[-which(gene_list$gene_name%in%omit_gene),]
   }
@@ -48,7 +48,7 @@ clocus_lower<-function(gene_GWAS,gene_chr,gene_everyline=6,x_title,grid.show=ele
     end = gene_list$end[gene_list$line==i]
     start = gene_list$start[gene_list$line==i]
     for(j in 1:(gene_everyline-1)){
-      gene_len<-nchar(gene_list$gene_name[gene_next_index])
+      gene_len<-nchar(as.character(gene_list$gene_name[gene_next_index]))
       gene_next_index =which(gene_list$start/1000000 > (start/1000000 +gene_len*0.02) & gene_list$line ==0)
       if(length(gene_next_index)>=1){
         gene_next_index<-which(gene_list$start==min(gene_list$start[gene_next_index]))
